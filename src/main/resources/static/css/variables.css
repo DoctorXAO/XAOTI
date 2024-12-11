@@ -1,0 +1,46 @@
+:root {
+	--darknest-color: #1a1a1a;
+	--dark-color: #464646;
+	--light-dark-color: #808080;
+	--text-color: white;
+	--button-color: purple;
+
+	--hover-opacity: 0.5;
+	--active-opacity: 0.1;
+	--opacity-transition: opacity 0.15s ease;
+	--filter-brightness: brightness(0.5);
+	--filter-transition: filter 0.15s ease;
+	--transform-transition: transform 0.5s ease;
+
+	--border-darknest: 1px solid #000000;
+	--border-light-dark: 1px solid #111111;
+	--border-darkviolet: 1vw solid darkviolet;
+
+	--text-indent: 4vw;
+
+	--icon-size: 10vw;
+	--logo-size: 50vw;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+}

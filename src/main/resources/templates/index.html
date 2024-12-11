@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>XAOTI</title>
+	<link rel="icon" href="img/xaoti-icon.png">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/popUpWindow.css">
+</head>
+<body>
+	<header>
+		<div class="burger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="header__logo">
+			<a href="index.html">XAOTI</a>
+		</div>
+		<div class="header__navigate">
+			<ul>
+				<li>
+					Home
+				</li>
+				<li>
+					About
+				</li>
+				<li>
+					Blog
+				</li>
+				<li>
+					Community
+				</li>
+				<li>
+					Contacts
+				</li>
+			</ul>
+		</div>
+		<div class="header__search">
+			<input type="text" name="find" placeholder="Type to search">
+		</div>
+		<div class="header__account">
+			<button id="signIn" type="button">Sign in</button>
+		</div>
+	</header>
+	<main>
+		<section class="main__about-universe">
+			<div class="main__about-universe__logo">
+				<img src="img/xaoti-coat-of-arms.png">
+			</div>
+			<div class="main__about-universe__short-description">
+				XAOTI - вселенная, повествующая историю о беспощадном технологическом прогрессе 
+				и формах жизни, что пытаются сохранить свою независимость и свободу. 
+				Алчность, жадность и коварство сопровождает на всем пути представителей расы Астродия. 
+				Им противостоят фанатики Астродиостр, что выбрали путь войны и науки. 
+				Падшая империя Алура уже давно забыта всеми, но её следы обнаруживают во всех уголках вселенной. 
+				Новая империя - Графы Жинжер ставит под угрозу стабильность существующих держав и армия мертвецов 
+				Мисури подступает... кто-же станет победителем в конце истории?
+			</div>
+		</section>
+		<section class="main__famous-characters">
+
+		</section>
+	</main>
+
+	<div id="overlay" class="overlay"></div>
+
+	<div id="signInWindow" class="pop-up-window">
+		<div class="pop-up-window__header">
+			<div></div>
+			<div class="pop-up-window__header__title">
+				<p>Sign in</p>
+			</div>
+			<div id="closeSignInWindow" class="pop-up-window__header__close">
+				&times;
+			</div>
+		</div>
+		<div class="pop-up-window__main">
+			<form action="sign-in" method="POST">
+				<label>~e-mail~
+					<input type="text" name="email" placeholder="Enter your e-mail">
+				</label>
+				<label>~password~
+					<input type="password" name="password" placeholder="Enter your password">
+				</label>
+				<div class="pop-up-window__main__button">
+					<button type=submit>Log in</button>
+				</div>
+			</form>
+		</div>
+		<div class="pop-up-window__footer">
+			<p id="signUp">Sign up</p>
+		</div>
+	</div>
+
+	<div id="signUpWindow" class="pop-up-window">
+		<div class="pop-up-window__header">
+			<div></div>
+			<div class="pop-up-window__header__title">
+				<p>Sign up</p>
+			</div>
+			<div id="closeSignUpWindow" class="pop-up-window__header__close">
+				&times;
+			</div>
+		</div>
+		<div class="pop-up-window__main">
+			<form action="sign-up" method="POST">
+				<label>~e-mail~
+					<input type="text" name="email" placeholder="Enter your e-mail">
+				</label>
+				<label>~password~
+					<input type="password" name="password" placeholder="Enter your password">
+				</label>
+				<input type="password" name="repeatPassword" placeholder="Repeat your password">
+				<label>~nickname~
+					<input type="text" name="nickname" placeholder="Enter your nickname">
+				</label>
+				<div class="pop-up-window__main__button">
+					<button type=submit>Join</button>
+				</div>
+			</form>
+		</div>
+		<div class="pop-up-window__footer">
+			<p id="popUpSignIn">Sign in</p>
+		</div>
+	</div>
+
+	<footer>
+		&copy; XAOTI - 2024
+	</footer>
+	<script src="js/authorization.js"></script>
+</body>
+</html>

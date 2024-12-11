@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple story creator</title>
+	<link rel="icon" href="img/xaoti-icon.png">
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+	<header>
+		<div class="burger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="header__logo">
+			<a href="index.html">XAOTI</a>
+		</div>
+		<div class="header__navigate">
+			<ul>
+				<li>
+					Home
+				</li>
+				<li>
+					About
+				</li>
+				<li>
+					Blog
+				</li>
+				<li>
+					Community
+				</li>
+				<li>
+					Contacts
+				</li>
+			</ul>
+		</div>
+		<div class="header__search">
+			<input type="text" name="find" placeholder="Type to search">
+		</div>
+		<div class="header__account">
+			<button type="button"> Sign in</button>
+		</div>
+	</header>
+	<main>
+		<section class="main__create-story">
+			<form name="create-story" method="POST">
+				<label>Скажите, как звать вашу новую историю?
+					<input type="text" name="title" placeholder="Type a title of the story">
+				</label>
+				<label>Ваша история... о чем она?
+					<textarea name="content" placeholder="Type a text of the story"></textarea>
+				</label>
+				<button type="submit">Создать историю</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		&copy; XAOTI - 2024
+	</footer>
+</body>
+</html>
